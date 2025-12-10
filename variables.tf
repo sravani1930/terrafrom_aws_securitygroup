@@ -1,5 +1,5 @@
 variable "sg_description" {
-    default = "Allow TLS inbound traffic and all outbound traffic"
+    
 
 }
 
@@ -27,3 +27,12 @@ variable "sg_tags" {
     type = map 
     default = {}
 }
+
+variable "ingress_rules" {
+    type = list  
+    default = []
+#     description      = ingress.value["description"]
+#     from_port        = ingress.value["from_port"]
+#     to_port          = ingress.value["to_port"]
+#     protocol         = ingress.value["cidr_blocks"]
+ }
